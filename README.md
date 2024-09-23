@@ -31,15 +31,14 @@
   name VARCHAR(110) NOT NULL
 );`.
 
-`
-CREATE TABLE address (
+`CREATE TABLE address (
   id INT AUTO_INCREMENT PRIMARY KEY,
   userId INT,
   address VARCHAR(255) NOT NULL,
   FOREIGN KEY (userId) REFERENCES User(id) ON DELETE CASCADE
 );`
 
-* Modify the MyQL settings in `backend/db/db.js` file, by replacing with your credentials.
+* Modify the MySQL settings in `backend/db/db.js` file, by replacing with your credentials.
 
 
 <u></u>
